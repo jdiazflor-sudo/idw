@@ -15,10 +15,8 @@
         <label for="fname">Nombres:</label><br>
         <input type="text" id="fname" name="fname" value=""><br>
 
-
         <label for="lname">Apellidos:</label><br>
         <input type="text" id="lname" name="lname" value=""><br>
-
 
         <label for="pemail">Correo Electronico:</label><br>
         <input type="email" id="pemail" name="pemail" value=""><br>        
@@ -27,11 +25,9 @@
     <fieldset>
         <legend> Codigo y Contraseña</legend>
 
-
         <label for="code">Codigo:</label><br>
         <input type="text" id="code" name="code" value="" minlength = "8" maxlength="8"
         pattern="[0-9]{8}"><br>
-
 
         <label for="contra">Contraseña:</label><br>
         <input type="password" id="contra" name="contra" value=""
@@ -44,14 +40,12 @@
         <label for="edad">Edad:</label><br>
         <input type="number" id="edad" name="edad"><br>
 
-
         <label for="fnac">Fecha de Nacimiento:</label><br>
         <input type="date" id="fnac" name="fnac" value="" min="1995-01-01" max="2010-12-31"><br>
     </fieldset>
     <!--Carrera y turno-->
     <fieldset>
         <legend>Carrera Profesional y Turno</legend>
-
 
         <label for="carrera">Seleccion su Carrera Profesional</label>
         <select name="carrera" id="carrera" required>
@@ -62,7 +56,6 @@
         </select>
         <br><br>
 
-
         <p>Seleccione su turno</p>
         <input type="radio" id="mañana" name="turno" value="Turno mañana">
         <label for="mañana">Turno mañana</label><br>
@@ -71,8 +64,17 @@
         <input type="radio" id="noche" name="turno" value="Turno noche">
         <label for="noche">Turno noche</label>
     </fieldset>
+    <!--Terminos y Condiciones , Comentarios-->
+    <fieldset>
+        <legend>Terminos y Comentarios</legend>
 
-
+        <input type="checkbox" id="Terminos" name="Terminos" value="Terminos y Condiciones">
+        <label for="Terminos">Acepto los Terminos y Condiciones</label><br>
+        <textarea placeholder="Escriba su Comentario..."
+        id="comentarios"name="comentarios"rows="6"cols="50"></textarea>
+        
+        <label for="comentarios"> </label><br>
+    </fieldset>
             <input type="submit" value="Submit">
     </form>
 </body>
