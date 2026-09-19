@@ -18,7 +18,19 @@
         <label for="pemail">Correo Electronico:</label><br>
         <input type="email" id="pemail" name="pemail" value=""><br>        
     </fieldset>
+    <fieldset>
+        <legend> Codigo y Contraseña</legend>
 
+
+        <label for="code">Codigo:</label><br>
+        <input type="text" id="code" name="code" value="" minlength = "8" maxlength="8"
+        pattern="[0-9]{8}"><br>
+
+
+        <label for="contra">Contraseña:</label><br>
+        <input type="password" id="contra" name="contra" value=""
+        patter="(?=.*\d)(?=.*[A-Z].).{8,}"><br>
+    </fieldset>
             <input type="submit" value="Submit">
     </form>
 </body>
