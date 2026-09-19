@@ -48,6 +48,29 @@
         <label for="fnac">Fecha de Nacimiento:</label><br>
         <input type="date" id="fnac" name="fnac" value="" min="1995-01-01" max="2010-12-31"><br>
     </fieldset>
+    <!--Carrera y turno-->
+    <fieldset>
+        <legend>Carrera Profesional y Turno</legend>
+
+
+        <label for="carrera">Seleccion su Carrera Profesional</label>
+        <select name="carrera" id="carrera" required>
+            <option value="" disabled selected>Seleccione su Carrera</option>
+            <option value="Sistemas">Ingenieria de Sistemas</option>
+            <option value="Electronica">Ingenieria Electronica</option>
+            <option value="Computacion">Ciencias de la Computacion</option>
+        </select>
+        <br><br>
+
+
+        <p>Seleccione su turno</p>
+        <input type="radio" id="mañana" name="turno" value="Turno mañana">
+        <label for="mañana">Turno mañana</label><br>
+        <input type="radio" id="tarde" name="turno" value="Turno tarde">
+        <label for="tarde">Turno tarde</label><br>
+        <input type="radio" id="noche" name="turno" value="Turno noche">
+        <label for="noche">Turno noche</label>
+    </fieldset>
 
 
             <input type="submit" value="Submit">
