@@ -13,13 +13,13 @@
         <legend>Datos del Alumno</legend>
 
         <label for="fname">Nombres:</label><br>
-        <input type="text" id="fname" name="fname" value=""><br>
+        <input type="text" id="fname" name="fname" value="" required><br>
 
         <label for="lname">Apellidos:</label><br>
-        <input type="text" id="lname" name="lname" value=""><br>
+        <input type="text" id="lname" name="lname" value="" required><br>
 
         <label for="pemail">Correo Electronico:</label><br>
-        <input type="email" id="pemail" name="pemail" value=""><br>        
+        <input type="email" id="pemail" name="pemail" value="" required><br>        
     </fieldset>
     <!--Codigo y contrasena del alumno-->
     <fieldset>
@@ -27,21 +27,21 @@
 
         <label for="code">Codigo:</label><br>
         <input type="text" id="code" name="code" value="" minlength = "8" maxlength="8"
-        pattern="[0-9]{8}"><br>
+        pattern="[0-9]{8}" required><br>
 
         <label for="contra">Contraseña:</label><br>
         <input type="password" id="contra" name="contra" value=""
-        patter="(?=.*\d)(?=.*[A-Z].).{8,}"><br>
+        patter="(?=.*\d)(?=.*[A-Z].).{8,}" required><br>
     </fieldset>
     <!--Edad y Fecha-->
     <fieldset>
         <legend>Edad y Fecha de Nacimiento</legend>
        
         <label for="edad">Edad:</label><br>
-        <input type="number" id="edad" name="edad"><br>
+        <input type="number" id="edad" name="edad" required><br>
 
         <label for="fnac">Fecha de Nacimiento:</label><br>
-        <input type="date" id="fnac" name="fnac" value="" min="1995-01-01" max="2010-12-31"><br>
+        <input type="date" id="fnac" name="fnac" value="" min="1995-01-01" max="2010-12-31" required><br>
     </fieldset>
     <!--Carrera y turno-->
     <fieldset>
@@ -68,14 +68,15 @@
     <fieldset>
         <legend>Terminos y Comentarios</legend>
 
-        <input type="checkbox" id="Terminos" name="Terminos" value="Terminos y Condiciones">
+        <input type="checkbox" id="Terminos" name="Terminos" value="Terminos y Condiciones" required>
         <label for="Terminos">Acepto los Terminos y Condiciones</label><br>
         <textarea placeholder="Escriba su Comentario..."
         id="comentarios"name="comentarios"rows="6"cols="50"></textarea>
         
         <label for="comentarios"> </label><br>
     </fieldset>
-            <input type="submit" value="Submit">
+
+        <input type="submit" value="Enviar">
     </form>
 </body>
 </html>
