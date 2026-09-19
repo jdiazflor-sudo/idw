@@ -1,9 +1,14 @@
 <!DOCTYPE html>
 <html>
 <body>
+<!--Cabecera-->
+<header>
 <h2>Formulario Universitario</h2>
 <p>Querido estudiante universitario llene el siguiente formulario</p>
+</header>
+
     <form>
+     <!--Datos del Alumno-->   
     <fieldset>
         <legend>Datos del Alumno</legend>
 
@@ -18,6 +23,7 @@
         <label for="pemail">Correo Electronico:</label><br>
         <input type="email" id="pemail" name="pemail" value=""><br>        
     </fieldset>
+    <!--Codigo y contrasena del alumno-->
     <fieldset>
         <legend> Codigo y Contraseña</legend>
 
@@ -31,6 +37,19 @@
         <input type="password" id="contra" name="contra" value=""
         patter="(?=.*\d)(?=.*[A-Z].).{8,}"><br>
     </fieldset>
+    <!--Edad y Fecha-->
+    <fieldset>
+        <legend>Edad y Fecha de Nacimiento</legend>
+       
+        <label for="edad">Edad:</label><br>
+        <input type="number" id="edad" name="edad"><br>
+
+
+        <label for="fnac">Fecha de Nacimiento:</label><br>
+        <input type="date" id="fnac" name="fnac" value="" min="1995-01-01" max="2010-12-31"><br>
+    </fieldset>
+
+
             <input type="submit" value="Submit">
     </form>
 </body>
