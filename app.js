@@ -12,6 +12,7 @@ function renderTasks() {
         li.className = 'list-group-item d-flex justify-content-between align-items-center';
         li.innerHTML = `
             <span>${task.text}</span>
+            <button class="btn btn-sm btn-success me-2" onclick="toggleTask(${index})">Completar</button>            
             <button class="btn btn-danger btn-sm" onclick="deleteTask(${index})">Eliminar</button>
         `;
         list.appendChild(li);
@@ -28,6 +29,8 @@ form.addEventListener('submit', (e) => {
     input.value = '';
     renderTasks();
 });
+
+
 
 function deleteTask(index) {
     tasks.splice(index, 1);
