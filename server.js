@@ -74,7 +74,7 @@ const server = http.createServer((req, res) => {
         });
     } else {
         res.writeHead(404, { 'Content-Type': 'application/json' });
-        res.end(JSsON.stringify({ message: 'Recurso no encontrado' }));
+        res.end(JSON.stringify({ message: 'Recurso no encontrado' }));
     }
 });
 
