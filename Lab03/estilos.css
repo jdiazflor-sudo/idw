@@ -1,0 +1,23 @@
+/* Contenedor principal con Flexbox */
+.hero-flex-container {
+    display: flex;
+    flex-direction: column-reverse; /* En móviles: la imagen queda abajo y el texto arriba */
+    align-items: center;
+    gap: 2rem;
+}
+
+
+/* Control de los elementos hijos dentro del contenedor Flexbox */
+.hero-text, .hero-image {
+    flex: 1; /* Distribuyen el espacio de forma equitativa en escritorio */
+    width: 100%;
+}
+
+
+/* En pantallas de escritorio (≥992px), cambiamos la dirección del eje principal a filas[cite: 1] */
+@media (min-width: 992px) {
+    .hero-flex-container {
+        flex-direction: row; /* Texto a la izquierda, imagen a la derecha[cite: 1] */
+        justify-content: space-between;
+    }
+}

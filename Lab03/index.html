@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal Académico - Landing Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <!-- Menu de Navegacion -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow-sm sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand fw-bold" href="#">Portal Académico</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link active" href="#">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#cursos">Cursos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#noticias">Noticias</a></li>
+                </ul>
+                <div class="d-flex gap-2">
+                    <button class="btn btn-outline-light btn-sm" data-bs-toggle="modal" data-bs-target="#loginModal">Iniciar Sesión</button>
+                    <button class="btn btn-light text-primary btn-sm fw-semibold">Registrarse</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- Seccion principal -->
+    <header class="hero-section container py-5 my-4">
+        <div class="row align-items-center">
+            <div class="col-lg-6 hero-text mb-4 mb-lg-0">
+                <h1 class="display-4 fw-bold text-dark mb-3">Impulsa tu futuro profesional con nosotros</h1>
+                <p class="lead text-secondary mb-4">Accede a una educación moderna, flexible y adaptada a las demandas del mercado tecnológico actual. Aprende con expertos.</p>
+                <a href="#cursos" class="btn btn-primary btn-lg">Explorar Cursos</a>
+            </div>
+            <div class="col-lg-6 hero-image text-center">
+                <img src="https://dondeestudiar.pe/wp-content/uploads/2023/01/universidad-UNSA.jpg" alt="Estudiantes universitarios" class="img-fluid rounded shadow-lg">
+            </div>
+        </div>
+    </header>
+    <!-- Catalogo de cursos -->
+    <section id="cursos" class="bg-light py-5">
+        <div class="container">
+            <h2 class="text-center fw-bold mb-4">Cursos Ofertados</h2>
+            <div class="card-grid">
+                <!-- Curso 1 -->
+                <div class="card shadow-sm border-0">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold">Desarrollo Web Frontend</h5>
+                        <p class="card-text text-muted">Domina HTML, CSS, JavaScript moderno y frameworks responsivos.</p>
+                        <a href="#" class="btn btn-outline-primary btn-sm">Ver Detalle</a>
+                    </div>
+                </div>
+                <!-- Curso 2 -->
+                <div class="card shadow-sm border-0">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold">Bases de Datos SQL</h5>
+                        <p class="card-text text-muted">Diseña, administra y optimiza consultas en bases de datos relacionales.</p>
+                        <a href="#" class="btn btn-outline-primary btn-sm">Ver Detalle</a>
+                    </div>
+                </div>
+                <!-- Curso 3 -->
+                <div class="card shadow-sm border-0">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold">Inteligencia Artificial</h5>
+                        <p class="card-text text-muted">Introducción al aprendizaje automático y ciencia de datos aplicada.</p>
+                        <a href="#" class="btn btn-outline-primary btn-sm">Ver Detalle</a>
+                    </div>
+                </div>
+                <!-- Curso 4 -->
+                <div class="card shadow-sm border-0">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold">UI/UX Product Design</h5>
+                        <p class="card-text text-muted">Crea experiencias de usuario memorables e interfaces atractivas.</p>
+                        <a href="#" class="btn btn-outline-primary btn-sm">Ver Detalle</a>
+                    </div>
+                </div>
+                <!-- Curso 5 -->
+                <div class="card shadow-sm border-0">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold">Cloud Computing</h5>
+                        <p class="card-text text-muted">Arquitectura en la nube, despliegues y servicios escalables.</p>
+                        <a href="#" class="btn btn-outline-primary btn-sm">Ver Detalle</a>
+                    </div>
+                </div>
+                <!-- Curso 6 -->
+                <div class="card shadow-sm border-0">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold">Seguridad Informática</h5>
+                        <p class="card-text text-muted">Fundamentos de ciberseguridad y protección de redes informáticas.</p>
+                        <a href="#" class="btn btn-outline-primary btn-sm">Ver Detalle</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- noticias y eventos -->
+    <section id="noticias" class="container py-5">
+        <h2 class="text-center fw-bold mb-4">Últimas Noticias</h2>
+        <div class="row g-4">
+            <div class="col-md-6">
+                <div class="p-4 bg-white border rounded shadow-sm">
+                    <h4 class="h5 fw-bold text-primary">Inicio de Matrículas 2026-II</h4>
+                    <p class="text-muted mb-3">Conoce el cronograma oficial y los pasos para asegurar tus asignaturas este ciclo.</p>
+                    <button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#infoModal">Más información</button>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="p-4 bg-white border rounded shadow-sm">
+                    <h4 class="h5 fw-bold text-primary">Feria Tecnológica Anual</h4>
+                    <p class="text-muted mb-3">Participa con tu proyecto de desarrollo web en la exposición de este semestre.</p>
+                    <button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#infoModal">Más información</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- cuadro modal -->
+    <div class="modal fade" id="infoModal" tabindex="-1" aria-labelledby="infoModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title fw-bold" id="infoModalLabel">Detalles del Evento</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Esta es una ventana emergente informativa generada con los componentes interactivos de Bootstrap 5. Mantente atento a los canales oficiales para actualizaciones de fechas y horarios.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary btn-sm" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

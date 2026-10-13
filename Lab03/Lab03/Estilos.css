@@ -1,0 +1,22 @@
+* {
+  box-sizing: border-box;
+  margin: 80;
+  padding:80;
+}
+
+body {
+  background-color: #343454; 
+  display: flex;             
+  justify-content: center;   
+  align-items: center;       
+  min-height: 100vh;        
+  font-family: Arial, sans-serif;
+}
+form {
+  background-color: #8e9dd7;        
+  width: 100%;    
+  max-width: 500px;                      
+  padding: 25px;              
+  border-radius: 10px;            
+  box-shadow: 0 14px 20px rgba(15, 69, 230, 0.1);
+}
