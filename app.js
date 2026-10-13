@@ -4,10 +4,13 @@ const courseRoutes = require('./routes/courseRoutes');
 
 const app = express();
 
+// Middleware global incorporado para parsear JSON
 app.use(express.json());
 
+// Servir la página web estática (Frontend)
 app.use(express.static(path.join(__dirname, 'public')));
 
+// Middleware personalizado de Auditoría (Logger)
 app.use((req, res, next) => {
   const start = Date.now();
   
@@ -19,8 +22,10 @@ app.use((req, res, next) => {
   next();
 });
 
+// Enrutamiento principal de la API REST
 app.use('/api/cursos', courseRoutes);
 
+// Middleware global de Manejo de Errores (500)
 app.use((err, req, res, next) => {
   console.error(err.stack);
   res.status(500).json({
@@ -32,7 +37,7 @@ app.use((err, req, res, next) => {
 
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
-  console.log(`Lab06 API Express y Página Web corriendo en el puerto ${PORT}`);
+  console.log(`Servidor corriendo en el puerto ${PORT}`);
 });
 
 module.exports = app;

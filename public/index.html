@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de Cursos Académicos - Laboratorio Web</title>
+    <style>
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 0; padding: 40px; background-color: #f4f6f9; color: #333; }
+        .container { max-width: 800px; margin: auto; background: white; padding: 30px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); }
+        h1 { color: #0056b3; margin-top: 0; }
+        .card { background: #fafbfc; border: 1px solid #e1e4e8; padding: 20px; margin-top: 20px; border-radius: 6px; }
+        ul { padding-left: 20px; }
+        li { margin-bottom: 10px; font-size: 16px; }
+        .badge { background: #e1f5fe; color: #01579b; padding: 3px 8px; border-radius: 4px; font-weight: bold; font-size: 14px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Sistema de Gestión de Cursos</h1>
+        <p>Laboratorio integrador de Backend (Express.js, Arquitectura por Capas) y Frontend.</p>
+        
+        <div class="card">
+            <h3>Listado de Cursos Registrados (Consumo de API REST):</h3>
+            <ul id="lista-cursos">
+                <li>Cargando cursos desde el servidor...</li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
